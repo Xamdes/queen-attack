@@ -32,18 +32,15 @@ namespace QueenAttack
 
     public bool CanAttack(int x, int y)
     {
-      bool canAttack = false;
       //Check Horizontal or vertical return true
-      if(x == xCoord || y == yCoord)
-      {
-        canAttack = true;
-      }
-      //Logic for checking if coordinates are vertical
-      else if(false)
-      {
+      return (x == xCoord || y == yCoord || isVertical(x,y));
+    }
 
-      }
-      return canAttack;
+    public bool isVertical(int x2, int y2)
+    {
+      double m = Math.Abs((y2-yCoord)/(x2-xCoord));
+      return (m == 1);
+
     }
 
     //Check if Unit Test setup correctly

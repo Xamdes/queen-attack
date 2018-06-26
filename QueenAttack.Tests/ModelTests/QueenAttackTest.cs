@@ -60,7 +60,35 @@ namespace QueenAttack.Tests
     {
       //Eventual Tests
       Queen queen = new Queen(2,3);
-      Assert.AreEqual(false, queen.CanAttack(3,4));
+      Assert.AreEqual(false, queen.CanAttack(3,5));
+    }
+    [TestMethod]
+    public void Return_Diagonal_True()
+    {
+      //Eventual Tests
+      Queen queen = new Queen(2,3);
+      Assert.AreEqual(true, queen.isVertical(3,4));
+    }
+    [TestMethod]
+    public void Return_Diagonal_False()
+    {
+      //Eventual Tests
+      Queen queen = new Queen(2,3);
+      Assert.AreEqual(false, queen.isVertical(3,5));
+    }
+    [TestMethod]
+    public void Return_Diagonal_Attack_1st_True()
+    {
+      //Eventual Tests
+      Queen queen = new Queen(2,3);
+      Assert.AreEqual(true, queen.CanAttack(4,6));
+    }
+    [TestMethod]
+    public void Return_Diagonal_Attack_2nd_True()
+    {
+      //Eventual Tests
+      Queen queen = new Queen(1,1);
+      Assert.AreEqual(true, queen.CanAttack(8,8));
     }
 
   }
