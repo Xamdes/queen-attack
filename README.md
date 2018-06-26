@@ -6,6 +6,12 @@
 
 ## Specifications
 
+  * Queen
+    * Has X,Y Coordinates
+    * Can Attack to valid coordinates
+      * Check Horizontal
+      * Check Vertical
+      * Check Diagonal
 
 ## License
 
