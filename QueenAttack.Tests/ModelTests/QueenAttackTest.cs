@@ -11,7 +11,7 @@ namespace QueenAttack.Tests
     {
       //Eventual Tests
       Queen queen = new Queen();
-      Assert.AreEqual(false, queen.Default());
+      Assert.AreEqual(true, queen.Default());
     }
 
   }
